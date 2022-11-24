@@ -1,0 +1,16 @@
+spring:
+  data:
+    mongodb:
+#      host: localhost
+#      username: root
+#      password: 123456
+      uri: mongodb+srv://${DB_USER}:${DB_PWD}@cluster.grpjrxn.mongodb.net/?retryWrites=true&w=majority
+      database: UserDetail
+
+  security:
+    user:
+      name: jose
+      password: 123
+
+server:
+  port: 8080
